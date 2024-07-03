@@ -15,8 +15,6 @@ import About from './components/About';
 import Footer from './components/VivekPages/Footer';
 import Work from './components/Work';
 
-
-
 function App() {
   const scrollRef = useRef(null);
   const [loading, setLoading] = useState(true);
@@ -35,9 +33,10 @@ function App() {
       const scroll = new LocomotiveScroll({
         el: scrollRef.current,
         smooth: true,
-        lerp: 5,
+        lerp: 0.1, // Adjust lerp for smoother scrolling if needed
         multiplier: 1,
         class: 'is-inview',
+        direction: 'vertical', // Ensure vertical scrolling
       });
 
       return () => {
@@ -64,7 +63,7 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      direction: 'vertical'
+      direction: 'vertical', // Ensure vertical scrolling
       // Add other options as needed
     });
 
@@ -78,14 +77,12 @@ function App() {
   return (
     <>
       {loading && (
-        <div className="bg-[#E2DCD0] min-h-screen w-full flex justify-center items-center "
-        
-        data-scroll-container ref={scrollRef}>
+        <div className="bg-[#E2DCD0] min-h-screen w-full flex justify-center items-center" data-scroll-container ref={scrollRef}>
           <Preloader onLoadingComplete={() => setLoading(false)} />
         </div>
       )}
       {!loading && (
-        <div className="bg-[#E2DCD0] min-h-screen w-full select-none scroll-container uppercase cursor-[url(),_pointer]" ref={scrollRef}>
+        <div className="bg-[#E2DCD0] min-h-screen w-full select-none scroll-container uppercase cursor-[url(),_pointer]" style={{ overflowX: 'hidden' }} ref={scrollRef}>
           {/* <CustomCursor /> Add the custom cursor here */}
           <div className="flex justify-center text-center">
             <Navbar />
@@ -98,7 +95,7 @@ function App() {
             <Route path="/social" element={<Social />} />
             <Route path="/gallery" element={<Gallery />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </div>
       )}
     </>
