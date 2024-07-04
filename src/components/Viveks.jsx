@@ -45,7 +45,7 @@ function Viveks() {
     </span>
   ))}
 </h1>
-<h1 className="text-black">
+<h1 className="relative text-black ">
   {['D', 'U', 'R', 'G', 'U', 'L', 'E'].map((char, index) => (
     <span
       key={index}
