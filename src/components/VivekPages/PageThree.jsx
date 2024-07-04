@@ -46,7 +46,7 @@ const PageThree = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#00000029] text-black h-[100px] py-8 font-semibold text-4xl overflow-hidden bottom-52 md:bottom-24">
+    <section className="relative bg-[#00000029] text-black h-[100px] py-8 font-semibold text-4xl overflow-hidden bottom-60 md:bottom-24">
       <div className="marqueeInner flex w-full whitespace-nowrap" ref={marqueeInnerRef}>
         {Array(8).fill().map((_, index) => (
           <div className="marqueePart flex items-center flex-shrink-0 px-1" key={index}>
