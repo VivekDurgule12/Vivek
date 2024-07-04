@@ -27,7 +27,7 @@ function Contact() {
   };
   
   const handleCall = () => {
-    window.open('tel:+9112251220');
+    window.open('tel:9112251220');
   };
 
   return (
@@ -36,7 +36,7 @@ function Contact() {
         <h2 className="text-2xl mb-4 text-center text-gray-900">Contact Me</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-2">
+            <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-2 ">
               Name
             </label>
             <input
@@ -77,12 +77,12 @@ function Contact() {
             />
           </div>
           <div className="flex justify-center">
-            <button
-              type="submit"
-              className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
-            >
-              Send Message
-            </button>
+          <button
+  type="submit"
+  className="bg-transparent hover:bg-gray-800 text-gray-800 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+>
+  Send Message
+</button>
           </div>
         </form>
         
