@@ -47,7 +47,7 @@ function PageOne() {
 
   return (
     <div className="relative text-white h-screen flex items-center justify-center m-5 md:m-14 bottom-80 md:bottom-64 ">
-      <div className="text-justify p-5 md:text-4xl text-[15px] mt-[-50%] md:mt-[10%]  capitalize">
+      <div className="text-justify p-5 md:text-4xl text-[15px] mt-[-30%] md:mt-[10%]  capitalize">
         <p ref={gsapRef} className='text-[#474746]'>
         <div>
   <span>About Me</span>

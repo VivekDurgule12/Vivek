@@ -35,7 +35,7 @@ function Viveks() {
           className="md:text-[100px] md:mt-[-10%] md:text-start text-center text-4xl md:mb-[-10%] mb-[20%] "
         >
           <div className=''  ref={gsapRef}>
-          <h1 className="text-black">
+          <h1 className="relative text-black " >
   {['V', 'I', 'V', 'E', 'K'].map((char, index) => (
     <span
       key={index}
@@ -56,7 +56,7 @@ function Viveks() {
   ))}
 </h1>
 
-          <hr className='border-t-3 border-gray-700 mt-[90px]' />
+          <hr className='border-t-3 border-gray-700 mt-[90px] mb-11' />
           </div>
         </div>
       
