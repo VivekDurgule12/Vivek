@@ -28,13 +28,13 @@ function Viveks() {
   return (
     <>
       <div className="min-h-screen flex flex-col justify-center items-center">
-        <div className="relative text-4xl md:text-[100px] text-center mt-20 md:mt-0 mb-20 md:mb-0">
-          <div ref={gsapRef}>
+        <div className="relative text-3xl md:text-5xl text-center mt-20 md:mt-0 mb-20 md:mb-0">
+          <div ref={gsapRef} className="aspect-w-16 aspect-h-9 w-full">
             <h1 className="text-black">
               {['V', 'I', 'V', 'E', 'K'].map((char, index) => (
                 <span
                   key={index}
-                  className="inline-block hover:text-[#000000a3] transition-all duration-200"
+                  className="hover:text-[#000000a3] transition-all duration-200"
                 >
                   {char}
                 </span>
@@ -44,7 +44,7 @@ function Viveks() {
               {['D', 'U', 'R', 'G', 'U', 'L', 'E'].map((char, index) => (
                 <span
                   key={index}
-                  className="relative inline-block hover:text-[rgba(0,0,0,0.64)] transition-all duration-200"
+                  className="hover:text-[rgba(0,0,0,0.64)] transition-all duration-200"
                 >
                   {char}
                 </span>
