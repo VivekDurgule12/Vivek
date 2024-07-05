@@ -19,7 +19,7 @@ function About() {
         markers: false,
         onUpdate: self => {
           gsap.to(element, {
-            opacity: self.isActive ? 1 : 0,
+            opacity: self.progress, // Adjust opacity based on scroll progress
             duration: 0.5,
           });
         },
@@ -41,28 +41,37 @@ function About() {
   }, []);
 
   return (
-    <section className="relative text-gray-500 h-screen flex flex-col items-center justify-center m-5 md:m-14 top-24 md:top-1">
+    <section className="relative text-gray-600 min-h-screen flex flex-col items-center justify-center mx-5 md:mx-14">
       <div className="text-justify p-5 md:p-10 mt-[-50%] md:mt-[10%]">
-        <p ref={gsapRef} className="text-sm md:text-base lg:text-lg xl:text-xl transition-opacity duration-500">
+        <p ref={gsapRef} className="mt-96 md:mt-11 text-sm md:text-base lg:text-lg xl:text-xl transition duration-500">
           <span className="font-bold">About Me</span> <br />
           Hi there! I'm <span className="text-black font-semibold">Vivek Durgule</span>, originally from Kolhapur. I'm currently studying for my Bachelor of Computer Applications (BCA), but my heart beats for two things: sports and creativity.
           I'm proud to have played hockey professionally, representing Hockey Maharashtra in the 2022 Under-19 National Championship. This journey taught me about teamwork, discipline, and perseverance.
           When I'm not on the field, I'm crafting digital experiences as a freelance web developer and designer. I love blending functionality with beauty. Oh, and I have a passion for capturing nature's beauty through my photography.
-          <p >
           Indie music fuels my creativity, setting the tone for my projects.
           Welcome to my portfolio! Dive in, explore my work, and let's collaborate on something amazing together.
         </p>
-        </p>
-        
       </div>
-
-      <div className="mt-10">
-        <a href="https://docs.google.com/document/d/1IrLOMvHW31LuiZ_V8_wM6qU4GSFWn6lr/edit?usp=sharing&ouid=111743888766870687475&rtpof=true&sd=true" 
-        className='transition duration-300 relative group'
+      <div className="mt-10 p-5 md:p-10 w-full max-w-4xl">
+        <h3 className="text-2xl md:text-3xl font-bold mb-5 text-center">Skills</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {[
+            'C', 'C++', 'Java', 'Python', 
+            'HTML', 'CSS', 'JavaScript', 'SQL', 
+            'Linux', 'GitHub', 'React.js'
+          ].map((skill, index) => (
+            <div key={index} className="bg-gray-200 p-3 md:p-5 rounded-lg flex items-center justify-center shadow-md hover:bg-gray-300 transition duration-300">
+              <span className="text-sm md:text-base lg:text-lg font-medium">{skill}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-10 p-5 md:p-10">
+        <a
+          href="https://docs.google.com/document/d/1IrLOMvHW31LuiZ_V8_wM6qU4GSFWn6lr/edit?usp=sharing&ouid=111743888766870687475&rtpof=true&sd=true"
+          className="block text-center text-gray-800 font-bold py-2 px-4 rounded-md bg-gray-300 hover:bg-gray-400 transition duration-300"
         >
-        
-          <h1>Check out my Resume</h1>
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
+          Check out my Resume
         </a>
       </div>
     </section>
