@@ -51,7 +51,7 @@ function Navbar() {
 
   return (
     <motion.div
-      className={`container fixed top-0 z-50 bg-white bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-[100px] hover:backdrop-blur-[100px] border border-gray-300 border-opacity-10 rounded-[50px] shadow-inner-[15px] shadow-lg mt-10 text-center max-w-fit transition-transform duration-300 ${
+      className={`container fixed top-0 z-50 bg-white bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-[5px]  border border-gray-300 border-opacity-10 rounded-[50px]  shadow-2xl shadow-inner-lg mt-10 text-center max-w-fit transition-transform duration-300 ${
         isScrollingUp ? 'translate-y-0' : '-translate-y-full'
       }`}
       variants={container}

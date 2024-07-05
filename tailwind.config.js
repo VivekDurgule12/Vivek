@@ -15,6 +15,9 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        boxShadow: {
+          'inner-lg': 'inset 0 2px 4px rgba(0, 0, 0, 0.2)',
+        }
       },
     },
   },
