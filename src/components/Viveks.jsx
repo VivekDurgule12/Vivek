@@ -27,7 +27,7 @@ function Viveks() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="relative min-h-screen flex flex-col justify-center items-center">
         <div className="text-4xl md:text-[100px] text-center mt-20 md:mt-0 mb-20 md:mb-0">
           <div ref={gsapRef}>
             <h1 className="relative text-black">
