@@ -54,8 +54,8 @@ function Viveks() {
           </div>
         </div>
       </div>
-      <PageThree />
-      <div>
+      <div className="flex flex-col items-center">
+        <PageThree />
         <PageOne />
         <PageTwo />
       </div>
