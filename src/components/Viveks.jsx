@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import PageOne from './VivekPages/PageOne';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PageTwo from './VivekPages/PageTwo';
 import PageThree from './VivekPages/PageThree';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Register the plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -27,20 +27,20 @@ function Viveks() {
 
   return (
     <>
-      <div className=" min-h-screen flex flex-col justify-center items-center">
+      <div className="min-h-screen flex flex-col justify-center items-center">
         <div className="relative text-4xl md:text-[100px] text-center mt-20 md:mt-0 mb-20 md:mb-0">
           <div ref={gsapRef}>
-            <h1 className=" text-black">
+            <h1 className="text-black">
               {['V', 'I', 'V', 'E', 'K'].map((char, index) => (
                 <span
                   key={index}
-                  className=" inline-block hover:text-[#000000a3] transition-all duration-200"
+                  className="inline-block hover:text-[#000000a3] transition-all duration-200"
                 >
                   {char}
                 </span>
               ))}
             </h1>
-            <h1 className=" text-black">
+            <h1 className="text-black">
               {['D', 'U', 'R', 'G', 'U', 'L', 'E'].map((char, index) => (
                 <span
                   key={index}
