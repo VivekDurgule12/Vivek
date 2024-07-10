@@ -43,7 +43,7 @@ function Gallery() {
   return (
     <div className="md:m-32 m-16 mt-40 md:mt-40">
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-4 gap-4"
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 "
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -53,7 +53,7 @@ function Gallery() {
         {images.map((image, index) => (
           <motion.div
             key={index}
-            className="relative bg-black rounded-3xl overflow-hidden"
+            className="relative bg-black rounded-3xl overflow-hidden m-2"
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -63,7 +63,7 @@ function Gallery() {
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
               style={{ pointerEvents: 'none' }}
             />
           </motion.div>
