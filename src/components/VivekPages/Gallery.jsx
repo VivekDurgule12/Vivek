@@ -11,7 +11,6 @@ const images = [
   { url: "/Images/PXL_20231214_071722407.PORTRAIT.jpg", alt: "Vivek" },
   { url: "/Images/PXL_20231202_073507414.PORTRAIT.jpg", alt: "Vivek" },
   { url: "/Images/PXL_20231202_073106280.PORTRAIT~2.jpg", alt: "Vivek" },
-  { url: "/Images/Snapchat-1649020135.jpg", alt: "Vivek" },
   { url: "/Images/IMG_20211104_221504~2.jpg", alt: "Vivek" },
   { url: "/Images/PXL_20240613_101109668.PORTRAIT.jpg", alt: "Vivek" }
 ];
