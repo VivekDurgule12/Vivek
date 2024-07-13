@@ -4,17 +4,17 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const images = [
-  { url: "/Images/VIVEK Edit.png", alt: "VIVEK Edit" },
-  { url: "/Images/Copy of 20210606_182921.jpg", alt: "Vivek Durgule" },
-  { url: "/Images/Copy of IMG_20220504_095851166.PORTRAIT.jpg", alt: "Vivek Durgule" },
-  { url: "/Images/Copy of 20210606_183219.jpg", alt: "Vivek Durgule" },
-  { url: "/Images/Copy of 00100srPORTRAIT_00100_BURST20211110153642003_COVER~2.jpg", alt: "Vivek Durgule" },
-  { url: "/Images/PXL_20240615_065850139.PORTRAIT.jpg", alt: "Vivek" },
-  { url: "/Images/PXL_20231214_071722407.PORTRAIT.jpg", alt: "Vivek" },
-  { url: "/Images/PXL_20231202_073507414.PORTRAIT.jpg", alt: "Vivek" },
-  { url: "/Images/PXL_20231202_073106280.PORTRAIT~2.jpg", alt: "Vivek" },
-  { url: "/Images/IMG_20211104_221504~2.jpg", alt: "Vivek" },
-  { url: "/Images/PXL_20240613_101109668.PORTRAIT.jpg", alt: "Vivek" }
+  { id: 1, url: "/Images/VIVEK Edit.png", alt: "VIVEK Edit", caption: "A serene edit of nature." },
+  { id: 2, url: "/Images/Copy of 20210606_182921.jpg", alt: "Vivek Durgule", caption: "Scenic view captured by Vivek Durgule." },
+  { id: 3, url: "/Images/Copy of IMG_20220504_095851166.PORTRAIT.jpg", alt: "Vivek Durgule", caption: "Portrait in natural light." },
+  { id: 4, url: "/Images/Copy of 20210606_183219.jpg", alt: "Vivek Durgule", caption: "Sunset amidst the hills." },
+  { id: 5, url: "/Images/Copy of 00100srPORTRAIT_00100_BURST20211110153642003_COVER~2.jpg", alt: "Vivek Durgule", caption: "Floral beauty in close-up." },
+  { id: 6, url: "/Images/PXL_20240615_065850139.PORTRAIT.jpg", alt: "Vivek", caption: "Morning dew on leaves." },
+  { id: 7, url: "/Images/PXL_20231214_071722407.PORTRAIT.jpg", alt: "Vivek", caption: "Waterfall in the wilderness." },
+  { id: 8, url: "/Images/PXL_20231202_073507414.PORTRAIT.jpg", alt: "Vivek", caption: "Forest canopy from above." },
+  { id: 9, url: "/Images/PXL_20231202_073106280.PORTRAIT~2.jpg", alt: "Vivek", caption: "Sunrise over the mountains." },
+  { id: 10, url: "/Images/IMG_20211104_221504~2.jpg", alt: "Vivek", caption: "Misty morning by the lake." },
+  { id: 11, url: "/Images/PXL_20240613_101109668.PORTRAIT.jpg", alt: "Vivek", caption: "Snow-capped peaks under clear sky." }
 ];
 
 gsap.registerPlugin(ScrollTrigger);
@@ -135,13 +135,16 @@ function PageTwo() {
           <p className="text-base md:text-lg text-black">I create websites and applications.</p>
         </div>
         <div ref={rightDivRef} className="order-2 md:order-2 md:w-1/2 h-[50vh] flex items-center justify-center">
-          <img
-            ref={imageRef}
-            src={images[currentImageIndex]?.url}
-            alt={images[currentImageIndex]?.alt}
-            className="md:w-2/3 h-full object-cover rounded-2xl"
-            style={{ transition: 'opacity 0.5s ease-in-out' }}
-          />
+          <div className="flex flex-col items-center justify-center">
+            <img
+              ref={imageRef}
+              src={images[currentImageIndex]?.url}
+              alt={images[currentImageIndex]?.alt}
+              className="md:w-2/4 h-full object-cover rounded-3xl  mt-2 "
+              style={{ transition: 'opacity 0.5s ease-in-out' }}
+            />
+            <p className="text-sm md:text-base text-center text-gray-600">{images[currentImageIndex]?.caption}</p>
+          </div>
         </div>
       </div>
     </>

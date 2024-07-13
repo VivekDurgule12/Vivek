@@ -77,12 +77,12 @@ function App() {
   return (
     <>
       {loading && (
-        <div className="bg-[#E2DCD0] min-h-screen w-full flex justify-center items-center" data-scroll-container ref={scrollRef}>
+        <div className="bg-[#E2DCD0]  min-h-screen w-full flex justify-center items-center" data-scroll-container ref={scrollRef}>
           <Preloader onLoadingComplete={() => setLoading(false)} />
         </div>
       )}
       {!loading && (
-        <div className="bg-[#E2DCD0] min-h-screen w-full select-none scroll-container uppercase cursor-[url(),_pointer]" style={{ overflowX: 'hidden' }} ref={scrollRef}>
+        <div className="bg-[#E2DCD0]  min-h-screen w-full select-none scroll-container uppercase cursor-[url(),_pointer]" style={{ overflowX: 'hidden' }} ref={scrollRef}>
           {/* <CustomCursor /> Add the custom cursor here */}
           <div className="flex justify-center text-center">
             <Navbar />
