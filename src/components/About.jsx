@@ -68,7 +68,7 @@ function About() {
       </div>
       <div className="mt-10 p-5 md:p-10">
         <a
-          href="../../public/vivek-resume.pdf"
+          href='../../public\vivek-resume.pdf'
           className="block text-center text-gray-800 font-bold py-2 px-4 rounded-md bg-gray-300 hover:bg-gray-400 transition duration-300"
         >
           Check out my Resume
