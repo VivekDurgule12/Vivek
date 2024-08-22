@@ -4,6 +4,8 @@ import { FaTimes } from 'react-icons/fa';
 
 const items = [
   { id: 1, title: "Apple Vision Pro Web Clone", subtitle: "Web clone", link: "https://apple-vision-pro-clone-web.vercel.app/" },
+  { id: 2, title: "Book Store ", subtitle: "Store", link: "https://github.com/VivekDurgule12/BookStoreApp" },
+  { id: 2, title: "ICPC CLOCK BREAKING ", subtitle: "ICPC 2016", link: "https://github.com/VivekDurgule12/ICPC-2016-Problem-D" },
   // Add more items as needed
 ];
 
