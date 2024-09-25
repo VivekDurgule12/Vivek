@@ -27,33 +27,37 @@ function Viveks() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-center items-center">
-        <div className="relative text-3xl md:text-5xl text-center mt-20 md:mt-0 mb-20 md:mb-0">
-          <div ref={gsapRef}>
-            <h1 className="text-black">
-              {['V', 'I', 'V', 'E', 'K'].map((char, index) => (
-                <span
-                  key={index}
-                  className=" hover:text-[#000000a3] transition-all duration-200"
-                >
-                  {char}
-                </span>
-              ))}
-            </h1>
-            <h1 className="text-black">
-              {['D', 'U', 'R', 'G', 'U', 'L', 'E'].map((char, index) => (
-                <span
-                  key={index}
-                  className="relative hover:text-[rgba(0,0,0,0.64)] transition-all duration-200"
-                >
-                  {char}
-                </span>
-              ))}
-            </h1>
-            <hr className="border-t-3 border-gray-700 mt-10 md:mt-[90px] mb-11" />
-          </div>
-        </div>
+      <div className="min-h-screen flex flex-col justify-center items-center  ">
+
+      <div className="md:text-[70px] absolute inset-0 flex flex-col justify-center items-center text-[5vh] ">
+  <div ref={gsapRef} className="text-start">
+    <h1 className="text-black m-0 p-0">
+      {['V', 'I', 'V', 'E', 'K'].map((char, index) => (
+        <span
+          key={index}
+          className="hover:text-[#000000a3] transition-all duration-200 "
+        >
+          {char}
+        </span>
+      ))}
+    </h1>
+
+    <h1 className="text-black m-0 p-0 ">
+      {['D', 'U', 'R', 'G', 'U', 'L', 'E'].map((char, index) => (
+        <span
+          key={index}
+          className="relative hover:text-[rgba(0,0,0,0.64)] transition-all duration-200 "
+        >
+          {char}
+        </span>
+      ))}
+    </h1>
+  </div>
+</div>
+
+
       </div>
+
       <div className="flex flex-col items-center">
         <PageThree />
         <PageOne />
