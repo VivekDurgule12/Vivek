@@ -15,7 +15,7 @@ function Contact() {
       message: message,
     };
 
-    emailjs.send('vduegule31@gmail.com', 'template_hzu49rd', templateParams, 'K9HEb-THZmmAEudow')
+    emailjs.send('vdurgule31@gmail.com', 'template_hzu49rd', templateParams, 'K9HEb-THZmmAEudow')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Message sent successfully!');
