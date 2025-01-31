@@ -68,7 +68,7 @@ function About() {
       </div>
       <div className="mt-10 p-5 md:p-10">
         <a
-          href='https://docs.google.com/document/d/1KUfpVBqi5TXKI9T1CN-WIKZsEf_AP8jtyXPy_21LepM/edit?usp=sharing'
+          href='https://docs.google.com/document/d/1f8zeQ3XrqiM0ds2MFpm3a3uGXAjNi-jqCzFZGRFL8eU/edit?usp=sharing'
           className="block text-center text-gray-800 font-bold py-2 px-4 rounded-md bg-gray-300 hover:bg-gray-400 transition duration-300"
         >
           Check out my Resume
