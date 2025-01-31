@@ -6,6 +6,7 @@ const items = [
   { id: 1, title: "Apple Vision Pro Web Clone", subtitle: "Web clone", link: "https://apple-vision-pro-clone-web.vercel.app/" },
   { id: 2, title: "Book Store", subtitle: "Store", link: "https://github.com/VivekDurgule12/BookStoreApp" },
   { id: 3, title: "ICPC CLOCK BREAKING", subtitle: "ICPC 2016", link: "https://github.com/VivekDurgule12/ICPC-2016-Problem-D" },
+  {id: 4, title: "E-commerce", subtitle: "Grocery Shop", link: "https://github.com/VivekDurgule12/Store"},
   // Add more items as needed
 ];
 
