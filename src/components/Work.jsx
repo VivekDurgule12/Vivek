@@ -7,6 +7,15 @@ const items = [
   { id: 2, title: "Book Store", subtitle: "Store", link: "https://github.com/VivekDurgule12/BookStoreApp" },
   { id: 3, title: "ICPC CLOCK BREAKING", subtitle: "ICPC 2016", link: "https://github.com/VivekDurgule12/ICPC-2016-Problem-D" },
   {id: 4, title: "E-commerce", subtitle: "Grocery Shop", link: "https://github.com/VivekDurgule12/Store"},
+  {
+  id: 5,
+  title: "Fruit E-commerce",
+  subtitle: "GRAMLOK Fruits and Exports",
+  link: "http://gramlokfruits.com/",
+  description: `Excited to share my first web development project - www.gramlokfruits.com! 
+GRAMLOK FRUITS AND EXPORTS is a straightforward fruit e-commerce site enabling users to explore fruits, add to cart, and order via WhatsApp. I focused on the frontend, utilizing HTML, CSS, JavaScript, React, among others. A rewarding learning journey indeed! While enhancements are ongoing, I'm pleased with the progress. Your feedback is valuable! Open to connecting for frontend development assistance.`
+}
+
   // Add more items as needed
 ];
 
