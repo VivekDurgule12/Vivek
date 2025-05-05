@@ -10,7 +10,7 @@ function Footer() {
       className="w-full text-gray-600 text-center py-4 flex flex-col md:flex-row items-center justify-between p-5"
     >
       <p className="text-black py-2 px-4 rounded transition duration-300 relative group">
-        &copy; 2024 Vivek Durgule.
+        © {new Date().getFullYear()} Vivek Durgule.
         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </p>
       <p className="text-black py-2 px-4 rounded transition duration-300 relative group">
